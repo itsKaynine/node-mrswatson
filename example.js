@@ -4,7 +4,10 @@ var mrswatson = require("./mrswatson");
 mrswatson.pluginRoot = "K:\\Program Files (x86)\\VstPlugins";
 
 // List plugins
-mrswatson.listPlugins(function(plugins) {
+mrswatson.listPlugins(function(err, plugins) {
+	if (err)
+		return console.error("ERROR: \n", err);
+
 	console.log(plugins);
 });
 
@@ -18,7 +21,10 @@ var obj = {
 	parameters: ["0,0.2", "5,0.99"]
 };
 
-mrswatson.processAudio(obj, function(result) {
+mrswatson.processAudio(obj, function(err, result) {
+	if (err)
+		return console.error("ERROR: \n", err);
+
 	// Print the result log
 	console.log(result);
 });
@@ -36,7 +42,10 @@ var obj2 = {
 	]
 };
 
-mrswatson.processAudio(obj2, function(result) {
+mrswatson.processAudio(obj2, function(err, result) {
+	if (err)
+		return console.error("ERROR: \n", err);
+
 	// Print the result log
 	console.log(result);
 });

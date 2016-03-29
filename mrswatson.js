@@ -51,8 +51,15 @@ module.exports = {
 		runWatsonCommand(commandArgs, function(results) {
 			log(results);
 
-			if (callback)
-				callback(results);
+			if (callback) {
+				if (results.indexOf("[error") != -1) {
+					// TODO: more meaningful error handling
+					callback(results, null);
+				}
+				else {
+					callback(null, results);
+				}
+			}
 		});
 	},
 
@@ -95,7 +102,7 @@ module.exports = {
 			log(pluginNames);
 
 			if (callback)
-				callback(pluginNames);
+				callback(null, pluginNames);
 		});
 	}
 }
