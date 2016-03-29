@@ -10,6 +10,7 @@ var child_process = require('child_process');
 
 module.exports = {
 	pluginRoot: null,
+	wine: false,
 
 	//////////////////////////////////////////////////////////////////////////
 	// Process some audio with some plugins
@@ -132,7 +133,17 @@ function runCommand(command, args, end) {
 
 
 function runWatsonCommand(arguments, onFinished) {
-	var cmdPath = __dirname + "/bin/" + process.platform + "/mrswatson.exe";
+	var cmdPath;
+
+	// Using WINE
+	if (module.exports.wine) {
+		cmdPath = "wine";
+		arguments.push(__dirname + "/bin/win32/mrswatson.exe");
+	}
+	// Run normally
+	else {
+		cmdPath = __dirname + "/bin/" + process.platform + "/mrswatson.exe";
+	}
 
 	var foo = new runCommand(
 	    cmdPath, 

@@ -3,6 +3,9 @@ var mrswatson = require("./mrswatson");
 // Cutsom directory for VST plugins (optional)
 mrswatson.pluginRoot = "K:\\Program Files (x86)\\VstPlugins";
 
+// Use WINE for Windows .dll VSTs (optional)
+mrswatson.wine = false;
+
 // List plugins
 mrswatson.listPlugins(function(err, plugins) {
 	if (err)
