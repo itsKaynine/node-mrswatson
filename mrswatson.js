@@ -142,7 +142,7 @@ function runWatsonCommand(arguments, onFinished) {
 	}
 	// Run normally
 	else {
-		cmdPath = __dirname + "/bin/" + process.platform + "/mrswatson.exe";
+		cmdPath = __dirname + "/bin/" + process.platform + "/mrswatson";
 	}
 
 	var foo = new runCommand(
