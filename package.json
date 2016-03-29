@@ -1,0 +1,20 @@
+{
+    "name": "node-mrswatson",
+    "version": "0.1.0",
+    "description": "Node.js wrapper for MrsWatson.",
+    "main": "mrswatson.js",
+    "repository": "",
+    "keywords": [
+        "mrswatson",
+        "vst",
+        "audio",
+        "wav",
+        "effect"
+    ],
+    "author": "Punnawut Khowkittipaiboon <me@itskaynine.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/itsKaynine/node-mrswatson.git"
+    }
+}
