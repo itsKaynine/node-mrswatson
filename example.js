@@ -8,8 +8,9 @@ mrswatson.wine = false;
 
 // List plugins
 mrswatson.listPlugins(function(err, plugins) {
-	if (err)
+	if (err) {
 		return console.error("ERROR: \n", err);
+	}
 
 	console.log(plugins);
 });
@@ -25,8 +26,9 @@ var obj = {
 };
 
 mrswatson.processAudio(obj, function(err, result) {
-	if (err)
+	if (err) {
 		return console.error("ERROR: \n", err);
+	}
 
 	// Print the result log
 	console.log(result);
@@ -46,8 +48,9 @@ var obj2 = {
 };
 
 mrswatson.processAudio(obj2, function(err, result) {
-	if (err)
+	if (err) {
 		return console.error("ERROR: \n", err);
+	}
 
 	// Print the result log
 	console.log(result);

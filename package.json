@@ -1,7 +1,7 @@
 {
     "name": "node-mrswatson",
-    "version": "1.0.0",
-    "description": "Node.js wrapper for MrsWatson.",
+    "version": "1.0.1",
+    "description": "Node.js wrapper for MrsWatson",
     "main": "mrswatson.js",
     "repository": "",
     "keywords": [
