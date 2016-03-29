@@ -13,7 +13,7 @@ $ [sudo] npm install node-mrswatson
 Taken from example.js
 
 ```js
-var mrswatson = require("mrswatson");
+var mrswatson = require("node-mrswatson");
 
 // Cutsom directory for VST plugins (optional)
 mrswatson.pluginRoot = "K:\\Program Files (x86)\\VstPlugins";
@@ -69,5 +69,5 @@ mrswatson.processAudio(obj2, function(err, result) {
 
 ## Credits
 
-- [teragonaudio/MrsWatson](https://github.com/teragonaudio/MrsWatson)
+- [teragonaudio/MrsWatson](https://github.com/teragonaudio/MrsWatson) 
 - [ZECTBynmo/node-vst-host](https://github.com/ZECTBynmo/node-vst-host)

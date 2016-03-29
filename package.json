@@ -1,11 +1,12 @@
 {
     "name": "node-mrswatson",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Node.js wrapper for MrsWatson.",
     "main": "mrswatson.js",
     "repository": "",
     "keywords": [
         "mrswatson",
+        "wrapper",
         "vst",
         "audio",
         "wav",
