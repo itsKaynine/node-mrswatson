@@ -138,7 +138,7 @@ function runWatsonCommand(arguments, onFinished) {
 	// Using WINE
 	if (module.exports.wine) {
 		cmdPath = "wine";
-		arguments.push(__dirname + "/bin/win32/mrswatson.exe");
+		arguments.unshift(__dirname + "/bin/win32/mrswatson.exe");
 	}
 	// Run normally
 	else {
